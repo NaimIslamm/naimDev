@@ -1,0 +1,21 @@
+/* font upload-- */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Serif+Text:ital@0;1&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --font-1: "Public Sans", sans-serif;
+  --font-2: "DM Serif Display", serif;
+
+  /* monospace
+    */
+  /* --font-mono : Consolas, "Andale Mono", Courier, "Courier New", monospace; */
+}
+/* font upload-- */
+
+/*---------------------------- color------------------- */
+:root {
+  --color-1: hsla(36, 72%, 70%, 1);
+  --color-2: hsla(168, 62%, 36%, 1);
+  --color-3: white;
+  --color-4: #5b5b5c;
+  --color-5: #2c2c2d;
+}
