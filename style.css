@@ -1,3 +1,10 @@
+/* ------------RESET CSS---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ------------RESET CSS---------- */
 /* font upload-- */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Serif+Text:ital@0;1&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
@@ -10,7 +17,12 @@
   /* --font-mono : Consolas, "Andale Mono", Courier, "Courier New", monospace; */
 }
 /* font upload-- */
-
+.heading-font {
+  font-family: var(--font-2);
+}
+.text-font {
+  font-family: var(--font-1);
+}
 /*---------------------------- color------------------- */
 :root {
   --color-1: hsla(36, 72%, 70%, 1);
@@ -18,4 +30,38 @@
   --color-3: white;
   --color-4: #5b5b5c;
   --color-5: #2c2c2d;
+  --color-6: black;
+}
+.black-bg-color {
+  background-color: var(--color-6);
+}
+.text-color-color {
+  background-color: var(--color-3);
+}
+.text-pre-heading-color {
+  background-color: var(--color-1);
+}
+.text-small-color {
+  background-color: var(--color-4);
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+/*----------------------------- common css---------------------------- */
+.nav-main {
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-main ul {
+  margin: 0 auto;
+  padding: 24px 0;
+  border: 1px solid var(--color-4);
+}
+.nav-main li a {
+  justify-content: space-between;
+  padding: 25px 80px 25px 20px;
+  border-left: 1px solid var(--color-4);
+  letter-spacing: 5px;
+  text-align: left;
 }
