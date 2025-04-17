@@ -69,8 +69,9 @@ button {
   margin: 0 auto;
 }
 body {
-  background-color: #141516;
+  background-color: #161618;
   padding: 0 20px;
+  scroll-behavior: smooth;
 }
 /*----------------------------- common css---------------------------- */
 
@@ -132,4 +133,8 @@ body {
   border-radius: 0;
   box-shadow: 0;
   padding: 30px 0;
+}
+.expertise-section {
+  position: relative;
+  padding: 4rem 0rem 0 5rem;
 }

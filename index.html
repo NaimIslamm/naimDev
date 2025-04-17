@@ -22,7 +22,7 @@
     ></script>
     <!-- cdn -->
   </head>
-  <body class="black-bg-color">
+  <body class="">
     <header class="header-main container flex-col gap-14">
       <nav class="nav-main m-auto text-[white] container">
         <ul
@@ -35,7 +35,10 @@
           <li><a href="#say-hello">say hello</a></li>
         </ul>
       </nav>
-      <div class="hero-main flex justify-between items-center h-screen">
+      <div
+        id="intro"
+        class="hero-main flex justify-between items-center h-screen"
+      >
         <div class="hero-1st flex flex-col gap-5 relative">
           <p class="pre-heading text-pre-heading-color text-[16px] uppercase">
             Hello World
@@ -81,9 +84,16 @@
         </div>
       </div>
     </header>
-    <div class="container about-section flex justify-between items-center">
+    <div
+      id="about"
+      class="about-section container flex justify-between items-center"
+    >
       <div class="img-about">
-        <img class="max-w-[650px]" src="assets/20250128_220656.jpg" alt="" />
+        <img
+          class="max-w-[650px] object-cover object-center"
+          src="assets/20250128_220656.jpg"
+          alt=""
+        />
       </div>
       <div class="details-about text-[23px]/[40px] flex flex-col gap-5">
         <p class="pre-heading text-pre-heading-color text-[16px] uppercase">
@@ -98,9 +108,21 @@
           pariatur.
         </p>
         <button class="btn bg-[white] text-[14px] uppercase">
-          Download CV
+          <a href=""> Download CV</a>
         </button>
       </div>
+    </div>
+    <div id="" class="expertise-section container">
+      <div class="expertise-1st-row relative flex flex-col gap-5">
+        <p class="pre-heading text-pre-heading-color text-[16px] uppercase">
+          Expertise
+        </p>
+        <h2 class="text-color-color text-[58px]/[90px] font-bold">
+          Visual Design, Branding Identity, UI Design, Product Design
+          ,Prototyping, Illustration
+        </h2>
+      </div>
+      <div class="expertise-2nd-row"></div>
     </div>
     <script src="js/script.js"></script>
   </body>
