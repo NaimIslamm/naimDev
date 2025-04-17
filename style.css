@@ -16,6 +16,22 @@
     */
   /* --font-mono : Consolas, "Andale Mono", Courier, "Courier New", monospace; */
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-2);
+}
+p,
+a,
+span,
+li,
+input,
+button {
+  font-family: var(--font-1);
+}
 /* font upload-- */
 .heading-font {
   font-family: var(--font-2);
@@ -31,25 +47,35 @@
   --color-4: #5b5b5c;
   --color-5: #2c2c2d;
   --color-6: black;
+  --color-7: rgba(255, 255, 255, 0.5);
 }
 .black-bg-color {
   background-color: var(--color-6);
 }
+.black-color {
+  color: var(--color-6);
+}
 .text-color-color {
-  background-color: var(--color-3);
+  color: var(--color-3);
 }
 .text-pre-heading-color {
-  background-color: var(--color-1);
+  color: var(--color-1);
 }
 .text-small-color {
-  background-color: var(--color-4);
+  color: var(--color-4);
 }
 .container {
   width: 1440px;
   margin: 0 auto;
 }
 /*----------------------------- common css---------------------------- */
-
+.header-main {
+  background-color: #141516;
+}
+.hero-main {
+  position: relative;
+  padding: 4rem 0rem 0 5rem;
+}
 .nav-main ul {
   margin: 0 auto;
   padding: px 0;
@@ -67,6 +93,19 @@
   background-color: var(--color-5);
   color: var(--color-1);
 }
-.nav-main li:last-child {
-  /* border-right: 1px solid var(--color-4); */
+.pre-heading {
+  padding-left: 60px;
+  letter-spacing: 5px;
+}
+.pre-heading::before {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-7);
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.hero-2nd p {
+  letter-spacing: 4px;
 }
