@@ -49,19 +49,24 @@
   margin: 0 auto;
 }
 /*----------------------------- common css---------------------------- */
-.nav-main {
-  width: 100%;
-  margin: 0 auto;
-}
+
 .nav-main ul {
   margin: 0 auto;
-  padding: 24px 0;
-  border: 1px solid var(--color-4);
+  padding: px 0;
+  /* border: 1px solid var(--color-4); */
+  /* border-left: 0px solid var(--color-4);
+  border-right: 0px solid var(--color-4); */
 }
-.nav-main li a {
-  justify-content: space-between;
-  padding: 25px 80px 25px 20px;
-  border-left: 1px solid var(--color-4);
+.nav-main li {
+  padding: 25px 150px 25px 20px;
+  border: 1px solid var(--color-4);
   letter-spacing: 5px;
   text-align: left;
+}
+.nav-main li:hover {
+  background-color: var(--color-5);
+  color: var(--color-1);
+}
+.nav-main li:last-child {
+  /* border-right: 1px solid var(--color-4); */
 }
