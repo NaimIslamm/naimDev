@@ -15,11 +15,16 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/1ce6f653f8.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- cdn -->
   </head>
   <body class="black-bg-color">
-    <header class="header-main flex-col gap-14">
-      <nav class="container nav-main text-[white] container">
+    <header class="header-main container flex-col gap-14">
+      <nav class="nav-main m-auto text-[white] container">
         <ul
           class="flex m-auto justify-center items-center uppercase text-[10px]"
         >
@@ -30,21 +35,20 @@
           <li><a href="#say-hello">say hello</a></li>
         </ul>
       </nav>
-      <div
-        class="hero-main container flex justify-between items-center h-screen"
-      >
+      <div class="hero-main flex justify-between items-center h-screen">
         <div class="hero-1st flex flex-col gap-5 relative">
           <p class="pre-heading text-pre-heading-color text-[16px] uppercase">
             Hello World
           </p>
           <h1
-            class="text-color-color text-[108px]/[90px] max-w-[700px] font-bold"
+            class="text-color-color text-[108px]/[90px] max-w-[750px] font-bold"
           >
             I am Naim,<br />
-            a frontend web developer based in Somewhere.
+            a Frontend<br />
+            Web Developer based in Somewhere.
           </h1>
         </div>
-        <div class="hero-2nd flex flex-col gap-22">
+        <div class="hero-2nd flex flex-col gap-22 justify-center items-center">
           <p class="text-small-color rotate-90 uppercase text-[12px]">
             <a
               class="hover:text-[white]"
@@ -69,9 +73,35 @@
               >Github.io</a
             >
           </p>
+          <img
+            class="w-[40px] color-white"
+            src="https://img.icons8.com/?size=160&id=115765&format=png"
+            alt=""
+          />
         </div>
       </div>
     </header>
+    <div class="container about-section flex justify-between items-center">
+      <div class="img-about">
+        <img class="max-w-[650px]" src="assets/20250128_220656.jpg" alt="" />
+      </div>
+      <div class="details-about text-[23px]/[40px] flex flex-col gap-5">
+        <p class="pre-heading text-pre-heading-color text-[16px] uppercase">
+          about
+        </p>
+        <p class="text-[white]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+        <button class="btn bg-[white] text-[14px] uppercase">
+          Download CV
+        </button>
+      </div>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
