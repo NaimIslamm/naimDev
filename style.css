@@ -197,3 +197,64 @@ body {
 .des-icon img {
   rotate: -40deg;
 }
+.work-card {
+  transition: all 0.5s ease-in-out;
+}
+.work-card:hover .work-description p:last-child {
+  color: var(--color-1);
+  transition: all 0.5s ease-in-out;
+}
+.work-card:hover .work-image img {
+  opacity: 1;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+.work-card:hover .des-icon img {
+  rotate: -20deg;
+  transition: all 0.5s ease-in-out;
+}
+.work-card:hover .work-description {
+  border-top: 1px solid var(--color-1);
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 760px) {
+  .nav-main ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-main {
+    padding: 0 20px;
+    height: 100%;
+    flex-direction: column;
+  }
+  .hero-1st h1 {
+    font-size: 40px;
+    line-height: 30px;
+  }
+  .img-about {
+    width: 100%;
+  }
+  .about-section img {
+    width: 200px;
+  }
+  .details-about {
+    width: 100%;
+  }
+  .expertise-section {
+    padding: 0 20px;
+  }
+  .expertise-section h2 {
+    font-size: 36px;
+    line-height: 30px;
+  }
+  .card-main {
+    width: 100%;
+  }
+  .timeline-bullet {
+    left: -23px;
+  }
+  .card-experience::before {
+    left: -20px;
+    min-height: 100px;
+  }
+}
