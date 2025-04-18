@@ -138,3 +138,43 @@ body {
   position: relative;
   padding: 4rem 0rem 0 5rem;
 }
+
+.card-p {
+  letter-spacing: 4px;
+}
+.expertise-2nd-row {
+  display: flex;
+  justify-content: space-between;
+}
+.exp-note {
+  letter-spacing: 0;
+}
+.card-experience {
+  position: relative;
+}
+.card-experience::before {
+  content: "";
+  width: 370px;
+  height: 1px;
+  background-color: var(--color-7);
+  position: absolute;
+  top: 200px;
+  left: -250px;
+  rotate: 90deg;
+  opacity: 0.3;
+}
+.works-main {
+  position: relative;
+  padding: 4rem 0rem 0 5rem;
+  margin-top: 100px;
+}
+.timeline-bullet {
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: var(--color-1);
+  position: absolute;
+  top: var(--timeline-top-adjust);
+  left: 0;
+}
