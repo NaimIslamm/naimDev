@@ -65,7 +65,7 @@ button {
   color: var(--color-4);
 }
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 body {
@@ -78,17 +78,33 @@ body {
 .nav-main ul {
   margin: 0 auto;
   padding: px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-4);
+  text-decoration: none;
+  list-style: none;
+
   /* border: 1px solid var(--color-4); */
   /* border-left: 0px solid var(--color-4);
   border-right: 0px solid var(--color-4); */
 }
 .nav-main li {
-  padding: 25px 150px 25px 20px;
   border: 1px solid var(--color-4);
-  letter-spacing: 5px;
   text-align: left;
+  text-decoration: none;
+  padding: 1.5rem 0;
 }
-.nav-main li:hover {
+.nav-main li a {
+  text-decoration: none;
+  padding: 1.6rem 9.5rem 1.5rem 2rem;
+  color: var(--color-3);
+  font-size: 10px;
+  letter-spacing: 4px;
+  list-style: none;
+  text-transform: uppercase;
+}
+.nav-main li :hover {
   background-color: var(--color-5);
   color: var(--color-1);
 }
@@ -99,13 +115,19 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  padding: 4rem 0 0 3rem;
+  /* align-items: center; */
+  padding: 5rem 1rem 0 5.5rem;
+}
+.hero-1st {
+  width: 78%;
+}
+.hero-2nd {
+  width: 19%;
 }
 .pre-heading {
   color: var(--color-1);
   font-size: 17px;
-  padding-left: 60px;
+  padding-left: 70px;
   letter-spacing: 5px;
   position: relative;
   text-transform: uppercase;
@@ -121,13 +143,39 @@ body {
 }
 .hero-main h1 {
   color: white;
-  font-size: 105px;
-  line-height: 95px;
+  font-size: 107px;
+  line-height: 100px;
   font-weight: 700;
   max-width: 700px;
 }
-.hero-2nd p {
+.hero-1st {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero-2nd {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+}
+.hero-2nd a {
   letter-spacing: 4px;
+  text-decoration: none;
+  rotate: 90deg;
+  color: var(--color-4);
+  text-transform: uppercase;
+}
+.hero-2nd a:hover {
+  color: var(--color-3);
+}
+.hero-2nd p {
+  rotate: 90deg;
+  font-size: 14px;
+}
+.hero-2nd img {
+  width: 40px;
 }
 /*-------------------------- hero banner----------------------- */
 
@@ -137,12 +185,13 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   position: relative;
-  /* justify-content: space-between; */
+  justify-content: center;
   align-items: center;
 }
 .img-about {
   width: 48%;
   position: relative;
+  text-align: center;
 }
 .img-about img {
   width: 100%;
@@ -164,15 +213,21 @@ body {
   max-width: 600px;
 }
 .details-about button {
-  max-width: 450px;
+  max-width: 550px;
   background-color: var(--color-5);
-  color: var(--color-1);
-  letter-spacing: 4px;
+
   border: 0;
   border-radius: 0;
   box-shadow: 0;
   padding: 30px 0;
   transition: all 0.3s ease-in-out;
+}
+.details-about button a {
+  color: var(--color-1);
+  letter-spacing: 4px;
+  text-decoration: none;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 .details-about button:hover {
   color: var(--color-3);
@@ -181,7 +236,9 @@ body {
 .expertise-section {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
   margin-top: 120px;
   position: relative;
 }
@@ -190,7 +247,13 @@ body {
   flex-direction: column;
   position: relative;
 }
-
+.expertise-1st-row h2 {
+  font-size: 58px;
+  line-height: 90px;
+  font-weight: 700;
+  color: var(--color-3);
+  max-width: 1230px;
+}
 .card-p {
   letter-spacing: 4px;
   font-size: 16px;
@@ -224,19 +287,20 @@ body {
 .expertise-2nd-row {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px 0 80px;
+  padding: 5rem 1rem 0 8.5rem;
 }
 .second-row-1st-coloum {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  row-gap: 40px;
+  row-gap: 75px;
+  column-gap: 10px;
   color: var(--color-3);
 }
 
 .card-main {
-  width: 46%;
+  width: 44%;
   position: relative;
 }
 .card-experience {
@@ -270,14 +334,22 @@ body {
 .works-main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 100px;
   position: relative;
-  padding: 20px 20px;
-  margin-top: 150px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 250px;
 }
 .works-1st-row {
   display: flex;
   flex-direction: column;
+}
+.works-1st-row h2 {
+  font-size: 58px;
+  line-height: 90px;
+  color: var(--color-3);
+  font-weight: 700;
+  max-width: 1230px;
 }
 
 .work-description {
@@ -285,11 +357,12 @@ body {
   padding: 10px;
 }
 .work-second-row {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
-  padding: 0 20px 0 20px;
+  padding: 0 60px;
 }
 .des-icon i {
   color: var(--color-7);
@@ -298,7 +371,9 @@ body {
 .work-card {
   display: flex;
   width: 48%;
+  gap: 30px;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .work-image {
   width: 30%;
@@ -313,15 +388,35 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.work-description a {
+  text-decoration: none;
+}
+.des-1st-col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.des-1st-col p:first-child {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-4);
+  text-decoration: none;
+}
+.des-1st-col p:last-child {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-3);
+  text-decoration: none;
+}
 .work-card:hover .work-description p:last-child {
   color: var(--color-1);
   transition: all 0.5s ease-in-out;
 }
-.work-card:hover .work-image img {
+/* .work-card:hover .work-image img {
   opacity: 1;
   background-color: white;
   transition: all 0.5s ease-in-out;
-}
+} */
 .work-card:hover .des-icon i {
   rotate: 30deg;
   transition: all 0.5s ease-in-out;
@@ -338,14 +433,23 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .nav-main li {
+    border: 0px;
+
+    text-decoration: none;
+    padding: 1.5rem 0;
+  }
+  .pre-heading {
+    font-size: 12px;
+  }
   .hero-main {
     padding: 0 20px;
-    height: 100%;
-    flex-direction: column;
+    height: 50%;
+    /* flex-direction: column; */
   }
   .hero-1st h1 {
-    font-size: 40px;
-    line-height: 30px;
+    font-size: 51px;
+    line-height: 51px;
   }
   .img-about {
     width: 100%;
@@ -354,7 +458,7 @@ body {
     width: 200px;
   }
   .details-about button {
-    width: %;
+    width: 20%;
   }
   .details-about {
     width: 100%;
@@ -375,5 +479,11 @@ body {
   .card-experience::before {
     left: -20px;
     min-height: 100px;
+  }
+  .expertise-2nd-row {
+    padding: 0 20px;
+  }
+  .work-second-row {
+    padding: 0 20px;
   }
 }
