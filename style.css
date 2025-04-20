@@ -74,7 +74,9 @@ body {
   scroll-behavior: smooth;
 }
 /*----------------------------- common css---------------------------- */
-
+.nav-main {
+  width: 100%;
+}
 .nav-main ul {
   margin: 0 auto;
   padding: px 0;
@@ -97,7 +99,7 @@ body {
 }
 .nav-main li a {
   text-decoration: none;
-  padding: 1.6rem 9.5rem 1.5rem 2rem;
+  padding: 1.6rem 8.8rem 1.5rem 2rem;
   color: var(--color-3);
   font-size: 10px;
   letter-spacing: 4px;
@@ -385,6 +387,7 @@ body {
 }
 .work-image img {
   max-width: 143px;
+  height: 150px;
   object-fit: cover;
   object-position: center;
 }
@@ -527,6 +530,7 @@ body {
   }
   .work-card {
     width: 100%;
+    gap: 10px;
   }
   .des-1st-col p:last-child {
     font-size: 15px;
