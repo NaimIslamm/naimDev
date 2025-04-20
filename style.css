@@ -531,6 +531,25 @@ body {
   .work-card {
     width: 100%;
     gap: 10px;
+    flex-direction: column;
+  }
+  .work-image {
+    width: 100%;
+  }
+
+  .work-description {
+    gap: 10px;
+    width: 100%;
+    border-top: 0;
+    border-bottom: 1px solid var(--color-4);
+  }
+  .work-card:hover .work-description {
+    border-top: 0;
+    border-bottom: 1px solid var(--color-1);
+    transition: all 0.5s ease-in-out;
+  }
+  .des-1st-col p {
+    max-width: 200px;
   }
   .des-1st-col p:last-child {
     font-size: 15px;
