@@ -215,7 +215,6 @@ body {
 .details-about button {
   max-width: 550px;
   background-color: var(--color-5);
-
   border: 0;
   border-radius: 0;
   box-shadow: 0;
@@ -225,13 +224,19 @@ body {
 .details-about button a {
   color: var(--color-1);
   letter-spacing: 4px;
+  font-size: 12px;
   text-decoration: none;
   letter-spacing: 4px;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+.details-about button:hover a {
+  color: var(--color-5);
+  letter-spacing: 5px;
+  font-weight: 600;
 }
 .details-about button:hover {
-  color: var(--color-3);
-  letter-spacing: 5px;
+  background-color: var(--color-3);
 }
 .expertise-section {
   display: flex;
@@ -262,7 +267,7 @@ body {
 .details-name {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 .name {
   font-size: 30px;
@@ -307,14 +312,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 14px;
+  gap: 25px;
   position: relative;
 }
 .card-experience::before {
   content: "";
   width: 1px;
   height: 100%;
-  min-height: 380px;
+  min-height: 260px;
   background-color: var(--color-7);
   position: absolute;
   top: 5px;
@@ -328,8 +333,8 @@ body {
   border-radius: 50%;
   background-color: var(--color-1);
   position: absolute;
-  top: 6px;
-  left: -48px;
+  top: 5px;
+  left: -47px;
 }
 .works-main {
   display: flex;
@@ -440,35 +445,61 @@ body {
     padding: 1.5rem 0;
   }
   .pre-heading {
-    font-size: 12px;
+    font-size: 14px;
+    padding-left: 60px;
+  }
+  .pre-heading::before {
+    top: 10px;
   }
   .hero-main {
-    padding: 0 20px;
-    height: 50%;
-    /* flex-direction: column; */
+    padding: 20px 0;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .hero-1st {
+    width: 100%;
+  }
+  .hero-2nd {
+    width: 100%;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: unset;
+    justify-content: unset;
+  }
+  .hero-2nd p {
+    rotate: 0deg;
   }
   .hero-1st h1 {
     font-size: 51px;
     line-height: 51px;
   }
+  .about-section {
+    margin-top: 30px;
+    gap: 30px;
+  }
   .img-about {
     width: 100%;
   }
-  .about-section img {
-    width: 200px;
+  .details-p {
+    font-size: 15px;
+    line-height: 25px;
   }
-  .details-about button {
-    width: 20%;
-  }
+
   .details-about {
     width: 100%;
   }
   .expertise-section {
-    padding: 0 20px;
+    margin-top: 30px;
+    padding: 0;
+    gap: 30px;
+  }
+  .expertise-1st-row {
+    gap: 30px;
   }
   .expertise-section h2 {
-    font-size: 36px;
-    line-height: 30px;
+    font-size: 40px;
+    line-height: 50px;
   }
   .card-main {
     width: 100%;
@@ -483,7 +514,21 @@ body {
   .expertise-2nd-row {
     padding: 0 20px;
   }
+  .works-1st-row h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
   .work-second-row {
-    padding: 0 20px;
+    padding: 0;
+  }
+  .works-main {
+    margin-top: 30px;
+    padding: 0;
+  }
+  .work-card {
+    width: 100%;
+  }
+  .des-1st-col p:last-child {
+    font-size: 15px;
   }
 }
