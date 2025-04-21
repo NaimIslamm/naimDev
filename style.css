@@ -48,6 +48,7 @@ button {
   --color-5: #2c2c2d;
   --color-6: black;
   --color-7: rgba(255, 255, 255, 0.5);
+  --color-8: #161618;
 }
 .black-bg-color {
   background-color: var(--color-6);
@@ -69,13 +70,23 @@ button {
   margin: 0 auto;
 }
 body {
-  background-color: #161618;
+  background-color: var(--color-8);
   padding: 0 20px;
   scroll-behavior: smooth;
 }
 /*----------------------------- common css---------------------------- */
 .nav-main {
   width: 100%;
+}
+.logo {
+  display: none;
+}
+.menu-btn {
+  display: none;
+}
+.menu-btn i {
+  color: var(--color-3);
+  font-size: 20px;
 }
 .nav-main ul {
   margin: 0 auto;
@@ -434,18 +445,60 @@ body {
   transition: all 0.5s ease-in-out;
 }
 @media screen and (max-width: 760px) {
-  .nav-main {
-    display: none;
-  }
-  .nav-main ul {
-    display: flex;
-    flex-direction: column;
-  }
-  .nav-main li {
-    border: 0px;
+  .logo {
+    display: block;
 
     text-decoration: none;
-    padding: 1.5rem 0;
+    color: var(--color-3);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    list-style: none;
+    /* text-transform: uppercase; */
+  }
+  .logo a {
+    text-decoration: none;
+    color: var(--color-3);
+  }
+  .menu-btn {
+    display: block;
+  }
+  #menu-btn-close {
+    display: none;
+  }
+  .nav-main {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 1.4rem 1rem;
+  }
+  .nav-main ul {
+    display: none;
+    background-color: var(--color-8);
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top: 60px;
+    z-index: 222;
+  }
+  .nav-main li {
+    display: inline-block;
+    border: 0px;
+    width: 100%;
+    text-decoration: none;
+    padding: 1.5rem;
+  }
+  .nav-main li:hover {
+    background-color: var(--color-5);
+    color: var(--color-1);
+  }
+  .nav-main li a {
+    font-size: 14px;
+    padding: 0;
   }
   .pre-heading {
     font-size: 14px;
