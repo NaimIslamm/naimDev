@@ -574,7 +574,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
-    padding: 1.4rem 1rem;
+    padding: 1.4rem 0;
   }
   .nav-main ul {
     display: none;
