@@ -388,6 +388,7 @@ body {
 .work-description {
   border-top: 1px solid var(--color-4);
   padding: 10px;
+  grid-area: 10px;
 }
 .work-second-row {
   width: 100%;
@@ -718,5 +719,116 @@ body {
   }
   .hello-2nd-row-col {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1570px) {
+  .nav-main li a {
+    padding: 1.6rem 10rem 1.5rem 2rem;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1263px) {
+  .nav-main li a {
+    padding: 1.6rem 5.8rem 1.5rem 2rem;
+  }
+}
+@media screen and (min-width: 761px) and (max-width: 999px) {
+  .nav-main li a {
+    padding: 1.6rem 3rem 1.6rem 1.2rem;
+  }
+  .hero-1st {
+    gap: 10px;
+  }
+  .hero-1st h1 {
+    font-size: 60px;
+    line-height: 71px;
+  }
+  .hero-2nd {
+    gap: 4.5rem;
+  }
+  .hero-2nd p {
+    font-size: 10px;
+  }
+  .hero-2nd a {
+    letter-spacing: 2px;
+  }
+  .hero-2nd img {
+    width: 30px;
+  }
+  .about-section {
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .pre-heading {
+    font-size: 16px;
+    padding-left: 65px;
+    padding-top: 2px;
+  }
+  .details-p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .expertise-section {
+    margin-top: 30px;
+    gap: 50px;
+  }
+  .expertise-1st-row h2 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .expertise-2nd-row {
+    padding: 2rem 1rem 0 3.5rem;
+  }
+  .name {
+    font-size: 25px;
+  }
+  .designation {
+    font-size: 16px;
+  }
+  .exp-note {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .card-experience {
+    gap: 22px;
+  }
+  .card-experience::before {
+    left: -28px;
+  }
+  .timeline-bullet {
+    top: 3px;
+    left: -31px;
+  }
+  .second-row-1st-coloum {
+    row-gap: 40px;
+  }
+  .works-main {
+    margin-top: 50px;
+  }
+  .works-1st-row h2 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .work-second-row {
+    padding: 0 20px;
+  }
+  .work-card {
+    gap: 14px;
+    justify-content: space-evenly;
+  }
+  .work-card {
+    width: 100%;
+  }
+  .hello-main {
+    margin-top: 50px;
+    gap: 70px;
+  }
+  .hello-2nd-row {
+    width: 100%;
+  }
+  .fst-col-2nd {
+    font-size: 18px;
+  }
+  .Social-sites a {
+    font-size: 18px;
   }
 }
