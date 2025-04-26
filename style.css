@@ -725,6 +725,12 @@ body {
   .nav-main li a {
     padding: 1.6rem 10rem 1.5rem 2rem;
   }
+  .hero-main {
+    padding: 5rem 1rem 0 8rem;
+  }
+  .hero-2nd {
+    gap: 6.5rem;
+  }
 }
 @media screen and (min-width: 1000px) and (max-width: 1263px) {
   .nav-main li a {
