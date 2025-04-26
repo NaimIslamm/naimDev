@@ -547,6 +547,8 @@ body {
 .thrd-col button:hover {
   background-color: var(--color-3);
 }
+/*------------------------------- mobile screen-------------------------- */
+
 @media screen and (max-width: 760px) {
   .logo {
     display: block;
@@ -721,6 +723,10 @@ body {
     width: 100%;
   }
 }
+/*------------------------------- mobile screen-------------------------- */
+
+/*------------------------------- big screen-------------------------- */
+
 @media screen and (min-width: 1570px) {
   .nav-main li a {
     padding: 1.6rem 10rem 1.5rem 2rem;
@@ -732,9 +738,19 @@ body {
     gap: 6.5rem;
   }
 }
+
+/*------------------------------- big screen-------------------------- */
+/*------------------------------- normal desktop/laptop screen-------------------------- */
+
 @media screen and (min-width: 1000px) and (max-width: 1263px) {
   .nav-main li a {
     padding: 1.6rem 5.8rem 1.5rem 2rem;
+  }
+  .expertise-2nd-row {
+    padding: 2rem 1rem 0 4.5rem;
+  }
+  .works-main {
+    margin-top: 80px;
   }
 }
 @media screen and (min-width: 761px) and (max-width: 999px) {
@@ -838,3 +854,4 @@ body {
     font-size: 18px;
   }
 }
+/*------------------------------- normal desktop/laptop screen-------------------------- */
