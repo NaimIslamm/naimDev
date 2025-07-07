@@ -94,7 +94,7 @@ body {
 }
 .nav-main ul {
   margin: 0 auto;
-  padding: px 0;
+  padding: 0px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,7 +114,7 @@ body {
 }
 .nav-main li a {
   text-decoration: none;
-  padding: 1.6rem 8.8rem 1.5rem 2rem;
+  padding: 1.6rem 8.8rem 1.6rem 2rem;
   color: var(--color-3);
   font-size: 10px;
   letter-spacing: 4px;
