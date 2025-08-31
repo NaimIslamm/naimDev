@@ -194,6 +194,51 @@ body {
 .hero-2nd img {
   width: 40px;
 }
+.arrow {
+  width: 0;
+  height: 40px;
+  /* border: 1px solid #333; */
+  position: relative;
+  animation: scroll 1.5s infinite;
+  -webkit-animation: scroll 1.5s infinite;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: -5px;
+    width: 1px;
+    height: 10px;
+
+    // triangle
+    /* border-top: 10px solid #333;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent; */
+  }
+}
+@keyframes scroll {
+  0% {
+    height: 40px;
+  }
+  30% {
+    height: 70px;
+  }
+  60% {
+    height: 40px;
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    height: 40px;
+  }
+  30% {
+    height: 70px;
+  }
+  60% {
+    height: 40px;
+  }
+}
 /*-------------------------- hero banner----------------------- */
 
 .about-section {
@@ -725,9 +770,9 @@ body {
     width: 100%;
   }
 }
-/*------------------------------- mobile screen-------------------------- */
+/*-------------------------------End mobile screen-------------------------- */
 
-/*------------------------------- big screen-------------------------- */
+/*-------------------------------Start big screen-------------------------- */
 
 @media screen and (min-width: 1570px) {
   .nav-main li a {
@@ -741,8 +786,8 @@ body {
   }
 }
 
-/*------------------------------- big screen-------------------------- */
-/*------------------------------- normal desktop/laptop screen-------------------------- */
+/*-------------------------------End big screen-------------------------- */
+/*-------------------------------Start normal desktop/laptop screen-------------------------- */
 
 @media screen and (min-width: 1000px) and (max-width: 1263px) {
   .nav-main li a {
@@ -754,8 +799,9 @@ body {
   .works-main {
     margin-top: 80px;
   }
-}
-@media screen and (min-width: 761px) and (max-width: 999px) {
+} /*-------------------------------End normal desktop/laptop screen-------------------------- */
+
+@media screen and (min-width: 820px) and (max-width: 999px) {
   .nav-main li a {
     padding: 1.6rem 3rem 1.6rem 1.2rem;
   }
