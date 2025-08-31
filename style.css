@@ -197,6 +197,8 @@ body {
 .arrow {
   width: 0;
   height: 40px;
+  /* object-fit: cover;
+  object-position: center; */
   /* border: 1px solid #333; */
   position: relative;
   animation: scroll 1.5s infinite;
@@ -218,13 +220,16 @@ body {
 }
 @keyframes scroll {
   0% {
-    height: 40px;
+    /* height: 40px; */
+    transform: translateY(0);
   }
   30% {
-    height: 70px;
+    /* height: 70px; */
+    transform: translateY(20px);
   }
   60% {
-    height: 40px;
+    /* height: 40px; */
+    transform: translateY(0px);
   }
 }
 
@@ -236,7 +241,7 @@ body {
     height: 70px;
   }
   60% {
-    height: 40px;
+    height: 80px;
   }
 }
 /*-------------------------- hero banner----------------------- */
@@ -801,7 +806,7 @@ body {
   }
 } /*-------------------------------End normal desktop/laptop screen-------------------------- */
 
-@media screen and (min-width: 820px) and (max-width: 999px) {
+@media screen and (min-width: 760px) and (max-width: 1003px) {
   .nav-main li a {
     padding: 1.6rem 3rem 1.6rem 1.2rem;
   }
