@@ -229,7 +229,7 @@ body {
   color: var(--color-3);
   max-width: 600px;
 }
-.details-about button {
+.details-about a {
   max-width: 550px;
   background-color: var(--color-5);
   border: 0;
@@ -238,22 +238,24 @@ body {
   padding: 30px 0;
   transition: all 0.3s ease-in-out;
 }
-.details-about button a {
+.details-about a {
   color: var(--color-1);
   letter-spacing: 4px;
   font-size: 12px;
+  text-align: center;
   text-decoration: none;
   letter-spacing: 4px;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
-.details-about button:hover a {
-  color: var(--color-5);
+.details-about a:hover a {
+  color: var(--color-2);
   letter-spacing: 5px;
   font-weight: 600;
 }
-.details-about button:hover {
+.details-about a:hover {
   background-color: var(--color-3);
+  box-shadow: var(--color-1) 4px 3px 4px;
 }
 
 /*-------------------- expertise section-------------- */
