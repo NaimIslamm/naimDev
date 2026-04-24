@@ -441,6 +441,7 @@ body {
   border-top: 1px solid var(--color-4);
   padding: 10px;
   grid-area: 10px;
+  gap: 5px;
 }
 .work-second-row {
   width: 100%;
